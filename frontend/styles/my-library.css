@@ -1,0 +1,128 @@
+@import 'theme.css';
+@import 'index.css';
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Playfair Display", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0px 100px;
+}
+
+main .featured-title {
+  text-align: center;
+}
+main .content-container {
+  display: flex;
+  gap: 30px;
+}
+main .content-container .sidebar {
+  width: 300px;
+  border-right: 1px solid var(--secondary-color);
+  margin-top: 15px;
+}
+main .content-container .sidebar h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+main .content-container .sidebar ul {
+  padding-left: 0;
+}
+main .content-container .sidebar ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+main .content-container .sidebar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  transition: color 0.2s;
+}
+main .content-container .sidebar ul li a:hover {
+  color: var(--primary-color);
+}
+main .content-container .sidebar #sort-ratings {
+  width: 100px;
+  padding: 5px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 5px;
+}
+main .content-container #saved-books-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+main .content-container #saved-books-container .book-card {
+  width: 170px;
+  transition: transform 0.3s;
+}
+main .content-container #saved-books-container .book-card:hover {
+  transform: scale(1.05);
+}
+main .content-container #saved-books-container .book-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+main .content-container #saved-books-container .book-info {
+  display: flex;
+  flex-direction: column;
+}
+main .content-container #saved-books-container .book-info .book-title {
+  font-size: 24px;
+  margin: 0px;
+}
+main .content-container #saved-books-container .book-info .book-author {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  margin-top: 10px;
+}
+main .content-container #saved-books-container .book-info .book-genre {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0px;
+}
+main .content-container #saved-books-container .book-info p {
+  margin: 0px;
+}
+main .content-container #saved-books-container .book-author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+main button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.books-section #sort-books {
+  width: 100px;
+  margin-left: 55px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 5px;
+}/*# sourceMappingURL=my-library.css.map */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/frontend/scripts/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/frontend/styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Culinary Chapters - Login</title>
+</head>
+<body>
+    <nav>
+        <a href="/frontend/pages/index.html"><h1>Culinary Chapters</h1></a>
+        <ul>
+            <li class="login-link"><a href="/frontend/pages/login.html">Login</a></li>
+            <li class="register-link"><a href="/frontend/pages/register.html">Register</a></li>
+            <li class="library-link"><a href="/frontend/pages/my-library.html">My Library</a></li>
+            <button class="logout-button">Logout</button>
+        </ul>
+    </nav>
+    <main>
+        <div class="login-container">
+            <form id="login-form">
+                <h1>Welcome Back</h1>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="/frontend/pages/register.html">Sign up!</a></p>
+            </form>
+            <div class="login-image">
+               <img src="" alt="Login Image">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Culinary Chapters. All rights reserved.</p>
+    </footer>
+</body>
+</html>

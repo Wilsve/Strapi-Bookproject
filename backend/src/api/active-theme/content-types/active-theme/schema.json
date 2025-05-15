@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "active_themes",
+  "info": {
+    "singularName": "active-theme",
+    "pluralName": "active-themes",
+    "displayName": "Active Theme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "selectedTheme": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theme.theme"
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import 'theme.css';
+@import 'index.css';
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 100px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid var(--secondary-color);
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+    
+    li {
+        font-family: 'inter', sans-serif;
+        list-style: none;
+
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 16px;
+        font-weight: 500;
+    
+    }
+    a:hover {
+        color: var(--secondary-color);
+    }
+    button {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 10px 15px;
+        
+        &:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+    }
+}
+#book-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   .book-details {
+    width: 60%;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.book-details-header {
+    display: flex;
+    justify-content: space-between;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+.book-details-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0px;
+
+}
+.book-details-genre {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin: 0px;
+}
+.book-details-author {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0px;
+}
+.book-details-pages {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0px;
+}
+.book-details-date {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0px;
+}
+.book-details-rating {
+    font-size: 1.2rem;
+    color: var(--text-color);
+   
+}
+.book-details-cover {
+    max-width: 300px;
+    border-radius: 8px;
+    
+}
+.rating-container input {
+    width: 150px;
+    height: 32px;
+}
+.submit-rating{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+    
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+}
+}
+.book-actions {
+    .return-btn {
+        color: var(--secondary-color);
+    }
+}
+
+
+
+

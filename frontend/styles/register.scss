@@ -1,0 +1,47 @@
+@import 'theme.css';
+@import 'index.css';
+@import 'login.css';
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 100px;
+}
+#register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    width: 300px;
+    border: 1px solid var(--secondary-color);
+    border-right: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 50px;
+    color: #a2a2a2;
+    
+}
+.register-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 355px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--secondary-color);
+    border-left: 0px;
+    border-radius: 0px 10px 10px 0px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0px 10px 10px 0px;
+    }
+}

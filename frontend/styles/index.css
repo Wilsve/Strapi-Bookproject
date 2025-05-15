@@ -1,0 +1,210 @@
+@import 'theme.css';
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Playfair Display", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+nav li {
+  font-family: "inter", sans-serif;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+nav a:hover {
+  color: var(--secondary-color);
+}
+nav button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+nav button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+header .hero-container {
+  position: relative;
+}
+header .hero-text {
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--text-color);
+}
+header .hero-text h2 {
+  color: var(--secondary-color);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+header .hero-text p {
+  color: var(--background-color);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+header img {
+  width: 100%;
+  opacity: 0.8;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .featured-title {
+  text-align: center;
+}
+main .content-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+main .content-container h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 22px;
+  margin-top: 15px;
+}
+main .content-container ul {
+  padding-left: 0;
+}
+main .content-container ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+main .content-container ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  transition: color 0.2s;
+}
+main .content-container ul li a:hover {
+  color: var(--primary-color);
+}
+main .content-container .books-section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+main .content-container #books-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 70px;
+  margin-top: 20px;
+}
+@media (max-width: 1100px) {
+  main .content-container #books-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  main .content-container #books-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  main .content-container #books-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  main .content-container #books-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main .content-container #books-container .book-card {
+  width: 170px;
+  transition: transform 0.3s;
+}
+main .content-container #books-container .book-card:hover {
+  transform: scale(1.05);
+}
+main .content-container #books-container .book-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+main .content-container #books-container .book-info {
+  display: flex;
+  flex-direction: column;
+}
+main .content-container #books-container .book-info .book-title {
+  font-size: 24px;
+  margin: 0px;
+}
+main .content-container #books-container .book-info .book-author {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  margin-top: 10px;
+}
+main .content-container #books-container .book-info .book-genre {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0px;
+}
+main .content-container #books-container .book-info p {
+  margin: 0px;
+}
+main .content-container #books-container .book-author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+main button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 1px solid var(--accent-color);
+}/*# sourceMappingURL=index.css.map */

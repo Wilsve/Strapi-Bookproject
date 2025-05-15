@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/frontend/scripts/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/frontend/styles/my-library.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Culinary Chapters</title>
+</head>
+<body>
+    <nav>
+        <a href="/frontend/pages/index.html"><h1>Culinary Chapters</h1></a>
+        <ul>
+            <li class="login-link"><a href="/frontend/pages/login.html">Login</a></li>
+            <li class="register-link"><a href="/frontend/pages/register.html">Register</a></li>
+            <li class="library-link"><a href="/frontend/pages/my-library.html">My Library</a></li>
+            <li class="username"></li>
+            <button class="logout-button">Logout</button>
+        </ul>
+    </nav>
+    <header>
+        <div class="hero-container">
+            <img src="/frontend/img/christian-mackie-BKGl7jJTtHc-unsplash.jpg" alt="Hero Image" id="hero-image">
+            <div class="hero-text">
+            <h2>Discover Culinary Adventures</h2>
+            <p>Explore our collection of handpicked culinary books that will inspire your next kitchen creation</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content-container">
+            <aside class="sidebar">
+                <h2>My Ratings</h2>
+                <select name="sort-ratings" id="sort-ratings">
+                    <option selected disabled value="all">All</option>
+                    <option value="title">Title (A-Z)</option>
+                    <option value="author">Author (A-Z)</option>
+                    <option value="rating">Rating (Falling)</option>
+                </select>
+                <ul id="ratings-container">
+                </ul>
+            </aside>
+            <div class="books-section">
+                <h2 class="featured-title">My Books</h2>
+                <select name="sort-books" id="sort-books">
+                    <option selected disabled value="all">All</option>
+                    <option value="title">Title (A-Z)</option>
+                    <option value="author">Author (A-Z)</option>
+                </select>
+                <div id="saved-books-container" class="books-grid">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Culinary Chapters. All rights reserved.</p>
+    </footer>
+</body>
+</html>
